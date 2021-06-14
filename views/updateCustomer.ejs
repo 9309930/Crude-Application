@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Update User</h4>
+    </div>
+    <div class="card-body">
+        <form action="/updateCustomer/<%= customer._id %>" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="name">Name</label>
+                        <input type="text" class="form-control" value="<%= customer.name %>" name="name" placeholder="Enter the Name" id="name">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="idcust">Corporate ID</label>
+                        <input type="text" class="form-control" value="<%= customer.idcust %>" name="idcust" placeholder="Enter new ID" id="idcust" onkeyup="this.value = this.value.toUpperCase();">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="number">Account Number</label>
+                        <input type="text" class="form-control" value="<%= customer.number %>" name="number" multiple placeholder="Enter Account Number" id="number">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button type="submit" class="btn btn-success">Update</button>
+                <a href="/" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

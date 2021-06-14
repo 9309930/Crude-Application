@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header">
+        <h4 class="font-weight-bold">Add New user</h4>
+    </div>
+    <div class="card-body">
+        <form action="/addCustomer" method="post">
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="name">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter Corp Name" id="name">
+                    </div>
+                </div><br>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="idcust">Corporate ID</label>
+                        <input type="text" class="form-control" name="idcust" placeholder="Enter Corporate ID" id="idcust" onkeyup="this.value = this.value.toUpperCase();">
+                    </div>
+                </div><br>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label class="col-form-label" for="number">Account Number</label>
+                        <input type="text" class="form-control" name="number" placeholder="enter your Account number" id="number">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <button itype="submt" class="btn btn-success">Submit</button>
+                <a href="/" class="btn btn-light">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
