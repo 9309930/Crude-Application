@@ -63,7 +63,7 @@ const getDeleteCustomerView = async(req, res, next) => {
         res.status(400).send(error.message);
     }
 }
-
+// this is edited
 const deleteCustomer = async(req, res, next) => {
     try {
         const id = req.params.id;
